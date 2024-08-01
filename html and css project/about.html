@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+
+       /*---------------------------------------NavBar---------------------------------------------*/
+       nav {
+        margin: 0;
+        /* background-color: rgb(67, 193, 132); */
+        /* border: 3px solid black; */
+        background-image: linear-gradient(rgb(20, 124, 252), rgb(131, 172, 233),rgb(186, 196, 223));
+        display: flex;
+        overflow: hidden;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+    
+      }
+
+     
+      .bar {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        /* padding: 14px 16px; */
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 2rem;
+        text-shadow: 1px 2px 3px  rgb(255, 255, 255);
+       
+      }
+
+       div.munu{
+      margin: 0;
+      padding-top: 25px;
+      
+      }
+
+    
+
+       /*---------------------------------------NavBar---------------------------------------------*/
+
+      /* menu icon re */
+
+@media only screen and (max-width:1300px){ 
+  .munu{
+       display: none;
+   }
+}
+@media screen and (max-width:340px){
+  .munu{
+       display: block;
+   }
+}
+
+      /* nav bar */
+
+@media screen and (max-width:340px){
+  .bar{
+       display: none;
+   }
+}
+
+
+/* png icon img */
+
+.png{
+   
+   
+    margin-top: 20px;
+}
+.png img{
+    width: 100%;
+}
+
+/* fieldset */
+fieldset{
+    margin-top: 2rem;
+    width: 50%;
+    border-color: #ffffff;
+    margin-left: 400px;
+    padding-left: 20px;
+    box-shadow: 2px 2px 12px 12px wheat;
+  
+}
+
+
+
+
+      /* footer */
+
+.footer {
+margin-top: 200px;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 0px 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translate(3px)
+}
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-col{
+   width: 28%;
+   height: 200px;
+   margin-top: 20px;
+   padding-left: 5rem;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+ 
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col li{
+
+    font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col li:hover{
+    color: #ffffff;
+  padding-left: 8px;
+
+}
+
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+/*responsive    footer        */
+@media screen and (max-width: 767px){
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+   text-align: center;
+   padding-left: 1px;
+  
+}
+}
+@media screen and (max-width: 574px){
+  .footer-col{
+    width: 100%;
+
+}
+}
+
+
+@media(max-width: 320px)
+{
+  .waves{
+    width: 100%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div id="img">
+          <img src="image (1).png" alt="logo" />
+        </div>
+        <div class="bar"><a href="index.html">HOME</a></div>
+        <div class="bar"><a href="grocery.html">GROCERY</a></div>
+        <div class="bar"><a href="about.html">ABOUT</a></div>
+        <div class="bar"><a href="contact.html">CONTACT</a></div>
+        <div class="bar"><a href="LOGIN.html">LOGIN</a></div>
+  
+      <div class="munu" id="none"><img src="burger-bar.png" alt="" width="40pxpx">
+      </div>  
+        
+      </nav>
+
+      
+<div class="png">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/static/ban-our-vision.jpg" alt="">
+</div> <br>
+<h3>VISION</h3>
+<hr><br>
+<p>To redefine India’s freshest and finest grocery experience.
+    <br>
+    <p>To offer customers better service and the best quality, benefits, flavour and taste</p>
+</p><br>
+<hr>
+   <fieldset>
+
+   <p>    <b> GROCERY🛒 – online grocery store</b> <br>
+    Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million satisfied customers. From essential household cleaning products to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs. <br>
+    
+    
+    In these times, we've eliminated the stress associated with shopping for daily essentials. You can now effortlessly order all your household products and groceries online. Plus, the added convenience of finding all your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks. <br>
+    
+    
+    We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your groceries, snacks and branded foods reach you on time. <br>
+    
+    
+    Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every schedule. <br>
+    
+    
+    Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities. <br>
+    
+    
+    Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This service exemplifies our commitment to providing you with not just the widest range of products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your immediate grocery needs.</p> 
+
+
+</fieldset>
+
+
+
+    <!-- -----------------------------footer---------------------------------------------------->
+<footer class="footer">
+
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+     <div class="footer-col">
+        <h4>Grocery Store</h4>
+        <li>About Us</li>
+        <li>In News</li>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+    </div>
+      
+     <div class="footer-col">
+         <h4>Get Help</h4>
+         <li>FAQs</li>
+        <li>Contact Us</li>
+        <li>T&Cs</li>
+        <li>  Vendor Connect</li>
+    
+    </div>
+  
+     <div class="footer-col">
+        <h4>Follow us</h4>
+     <ul class="social-icon">
+       <li class="social-icon__item"><a class="social-icon__link" > <img src="https://img.icons8.com/?size=50&id=118468&format=png" alt="">
+           <ion-icon name="logo-facebook"></ion-icon>
+         </a></li>
+       <li class="social-icon__item"><a class="social-icon__link" > <img src="https://img.icons8.com/?size=48&id=KDWXXYcBSEcJ&format=png" alt="">
+           <ion-icon name="logo-twitter"></ion-icon>
+         </a></li>
+       <li class="social-icon__item"><a class="social-icon__link" > <img src="https://img.icons8.com/?size=50&id=437&format=png" alt="">
+           <ion-icon name="logo-linkedin"></ion-icon>
+     </ul>
+    </div>
+   
+  </div>
+  </div>
+  </div>
+  </div>
+  <div ><p>Copyright © 2024-2025 Supermarket Grocery Supplies Pvt Ltd</p></div>
+  </footer>
+  
+</body>
+</html>

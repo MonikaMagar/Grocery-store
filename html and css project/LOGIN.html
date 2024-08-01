@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+
+       /*---------------------------------------NavBar---------------------------------------------*/
+        nav {
+        margin: 0;
+        /* background-color: rgb(67, 193, 132); */
+        /* border: 3px solid black; */
+        background-image: linear-gradient(rgb(20, 124, 252), rgb(131, 172, 233),rgb(186, 196, 223));
+        display: flex;
+        overflow: hidden;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+    
+      }
+
+     
+      .bar {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        /* padding: 14px 16px; */
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 2rem;
+        text-shadow: 1px 2px 3px  rgb(255, 255, 255);
+       
+      }
+
+       div.munu{
+      margin: 0;
+      padding-top: 25px;
+      
+      }
+
+    
+
+       /*---------------------------------------NavBar---------------------------------------------*/
+
+      /* menu icon re */
+
+@media only screen and (max-width:1300px){ 
+  .munu{
+       display: none;
+   }
+}
+@media screen and (max-width:340px){
+  .munu{
+       display: block;
+   }
+}
+
+      /* nav bar */
+
+@media screen and (max-width:340px){
+  .bar{
+       display: none;
+   }
+}
+/* 
+login page */
+@import "bourbon";
+
+body {
+	background: #eee !important;	
+}
+
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(32, 192, 11, 0.1);  }
+
+
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+      box-sizing: border-box;
+      justify-content: space-around;
+     
+    
+    }
+      
+
+
+		/* @include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+        } */
+	
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+.btn{
+  margin-left: 100px;
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(0, 128, 255);
+  color: #fff;
+}
+
+
+
+
+
+      /* footer */
+
+.footer {
+margin-top: 200px;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 0px 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translate(3px)
+}
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-col{
+   width: 28%;
+   height: 200px;
+   margin-top: 20px;
+   padding-left: 5rem;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+ 
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col li{
+
+    font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col li:hover{
+    color: #ffffff;
+  padding-left: 8px;
+
+}
+
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+/*responsive    footer        */
+@media screen and (max-width: 767px){
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+   text-align: center;
+   padding-left: 1px;
+  
+}
+}
+@media screen and (max-width: 574px){
+  .footer-col{
+    width: 100%;
+
+}
+}
+
+
+@media(max-width: 320px)
+{
+  .waves{
+    width: 100%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <div id="img">
+          <img src="image (1).png" alt="logo" />
+        </div>
+        <div class="bar"><a href="index.html">HOME</a></div>
+        <div class="bar"><a href="grocery.html">GROCERY</a></div>
+        <div class="bar"><a href="about.html">ABOUT</a></div>
+        <div class="bar"><a href="contact.html">CONTACT</a></div>
+        <div class="bar"><a href="LOGIN.html">LOGIN</a></div>
+  
+      <div class="munu" id="none"><img src="burger-bar.png" alt="" width="40pxpx">
+      </div>  
+        
+      </nav>
+
+
+
+
+
+
+
+
+    <!-- login page -->
+    <div class="wrapper">
+        <form class="form-signin">       
+          <h2 class="form-signin-heading">Please login</h2>
+          <br>
+          <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+          <br><br>
+          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+          <label class="checkbox">
+            <br>
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+          </label>
+          <br><br>
+          <button class="btn" type="submit">Login</button>   
+        </form>
+      </div>
+       <!-- -----------------------------footer---------------------------------------------------->
+<footer class="footer">
+
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+     <div class="footer-col">
+        <h4>Grocery Store</h4>
+        <li>About Us</li>
+        <li>In News</li>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+    </div>
+      
+     <div class="footer-col">
+         <h4>Get Help</h4>
+         <li>FAQs</li>
+        <li>Contact Us</li>
+        <li>T&Cs</li>
+        <li>  Vendor Connect</li>
+    
+    </div>
+  
+     <div class="footer-col">
+        <h4>Follow us</h4>
+     <ul class="social-icon">
+       <li class="social-icon__item"><a class="social-icon__link" > <img src="https://img.icons8.com/?size=50&id=118468&format=png" alt="">
+           <ion-icon name="logo-facebook"></ion-icon>
+         </a></li>
+       <li class="social-icon__item"><a class="social-icon__link" > <img src="https://img.icons8.com/?size=48&id=KDWXXYcBSEcJ&format=png" alt="">
+           <ion-icon name="logo-twitter"></ion-icon>
+         </a></li>
+       <li class="social-icon__item"><a class="social-icon__link" > <img src="https://img.icons8.com/?size=50&id=437&format=png" alt="">
+           <ion-icon name="logo-linkedin"></ion-icon>
+     </ul>
+    </div>
+   
+  </div>
+  </div>
+  </div>
+  </div>
+  <div ><p>Copyright © 2024-2025 Supermarket Grocery Supplies Pvt Ltd</p></div>
+  </footer>
+  
+</body>
+</html>
